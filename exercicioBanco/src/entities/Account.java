@@ -2,8 +2,8 @@ package entities;
 
 public class Account {
 	private int number;
-	private String holder;
-	private double balance;
+	private String holder;//proprietario
+	private double balance;//saldo
 	
 	public Account(int number, String holder) {
 		this.number = number;
@@ -36,7 +36,7 @@ public class Account {
 		balance += amount;
 	}
 	
-	public void withdraw(double amount) {
+	public void withdraw(double amount) { //saque
 		balance -= amount + 5.0;
 	}
 	
